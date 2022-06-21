@@ -6,7 +6,7 @@ function climbingStaircase(n){
 
     return noOfWays[n-1]
 }
-//test
+//test123
 console.log(climbingStaircase(1))
 console.log(climbingStaircase(2))
 console.log(climbingStaircase(3))
