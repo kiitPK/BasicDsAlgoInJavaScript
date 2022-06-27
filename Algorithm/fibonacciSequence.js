@@ -9,3 +9,5 @@ function fibonacci(n) {
 }
 
 console.log(fibonacci(9));
+
+// Big O = O(n)
