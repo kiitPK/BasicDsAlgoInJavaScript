@@ -7,3 +7,4 @@ sampleArray.forEach(function (x) {
 });
 console.log(counts);
 
+

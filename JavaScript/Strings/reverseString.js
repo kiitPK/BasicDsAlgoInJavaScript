@@ -27,3 +27,4 @@ function reverseBySeparator(string, separator) {
   return string.split(separator).reverse().join(separator);
 }
 console.log(reverseEachWord + ":::" + reverseEntireSentence);
+

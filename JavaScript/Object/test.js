@@ -1,13 +1,3 @@
-// var obj = {​
-//     a: {​
-//         b: {​
-//             c: 15,
-//             j: false
-//         }​,
-//         k: null
-//     },​
-// }​;
-
 var obj = {
   a: {
     b: {
@@ -19,25 +9,6 @@ var obj = {
 };
 
 function findPath(obj, path) {
-  let pathArr = path.split(".");
-  //   //let pathArr = "a.b.c".split(".");
-  //   console.log(pathArr);
-  //   let hasValue = true;
-  //   let validPath = "";
-  //   for (let i = 0; i < pathArr.length - 1; i++) {
-  //     console.log(pathArr[i]);
-  //     if (obj.hasOwnProperty(pathArr[i])) {
-  //       console.log("Yes");
-  //       validPath = validPath.concat(pathArr[i]);
-  //     } else {
-  //       console.log("no");
-  //       hasValue = false;
-  //     }
-  //   }
-  //   //console.log(validPath.join(","));
-  //   // validPath = validPath.join(".");
-  //   console.log(validPath);
-  //   return hasValue ? obj.validPath : undefined;
   return pathArr.reduce((obj, level) => obj && obj[level], obj);
 }
 
