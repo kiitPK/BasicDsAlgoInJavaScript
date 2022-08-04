@@ -28,3 +28,31 @@ function reverseBySeparator(string, separator) {
 }
 console.log(reverseEachWord + ":::" + reverseEntireSentence);
 
+var strNew = "what is your name";
+let strNewResult = [];
+strNew.split(" ").map((word) => {
+  strNewResult.push(word.split("").reverse().join(""));
+});
+
+console.log(strNewResult.join(" "));
+
+const fruits = ["banana", "pear", "apple"];
+const allfruits = fruits.concat(["mango", "melon", "avocado"]);
+console.log(allfruits);
+
+console.log(Date().getTime);
+
+const car = {
+  model: "Fiesta",
+};
+console.log(typeof car.color === "undefined");
+
+const phrase = "I love my dog! Dogs are great";
+
+console.log(phrase.split("dog").join(""));
+console.log(parseInt(0100, 10));
+
+console.log("fab".charAt(0).toUpperCase(), "fab");
+
+const items = ["a", "b", "c", "d", "e", "f"];
+console.log(items.join("").split("c").join("").split(""));
